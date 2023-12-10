@@ -1,4 +1,3 @@
-import "./App.css";
 const initialFriends = [
   {
     id: 118836,
@@ -20,7 +19,7 @@ const initialFriends = [
   },
 ];
 function App() {
-  return 1;
+  return <div>helo</div>;
 }
 
 export default App;
