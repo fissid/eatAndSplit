@@ -1,4 +1,5 @@
 import FriendsList from "./FriendsList";
+import FormAddFriend from "./FromAddFriend";
 
 const initialFriends = [
   {
@@ -26,6 +27,7 @@ function App() {
     <div className="app">
       <div className="sidebar">
         <FriendsList friends={initialFriends} />
+        <FormAddFriend />
       </div>
     </div>
   );
