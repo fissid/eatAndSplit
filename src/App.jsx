@@ -1,3 +1,4 @@
+import { useState } from "react";
 import Button from "./Button";
 import FriendsList from "./FriendsList";
 import FormAddFriend from "./FromAddFriend";
@@ -25,6 +26,7 @@ const initialFriends = [
 ];
 
 function App() {
+  const [addFriend, setAddFriend] = useState(false);
   return (
     <div className="app">
       <div className="sidebar">
