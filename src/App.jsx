@@ -1,5 +1,7 @@
+import Button from "./Button";
 import FriendsList from "./FriendsList";
 import FormAddFriend from "./FromAddFriend";
+import FormSplitBill from "./FromSplitBill";
 
 const initialFriends = [
   {
@@ -28,7 +30,9 @@ function App() {
       <div className="sidebar">
         <FriendsList friends={initialFriends} />
         <FormAddFriend />
+        <Button>New Friend</Button>
       </div>
+      <FormSplitBill></FormSplitBill>
     </div>
   );
 }
