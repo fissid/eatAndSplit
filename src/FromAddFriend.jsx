@@ -5,7 +5,7 @@ export default function FormAddFriend() {
       <label>👩🏻‍🤝‍👩🏻 Friend Name:</label>
       <input type="text" />
 
-      <label></label>
+      <label>📷 Image URL:</label>
       <input type="text" />
 
       <Button>Add</Button>
