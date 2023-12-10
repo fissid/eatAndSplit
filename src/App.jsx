@@ -27,12 +27,17 @@ const initialFriends = [
 
 function App() {
   const [addFriend, setAddFriend] = useState(false);
+  const [friendsData, setFriensData] = useState(initialFriends);
+  function newFriendPasser(data) {
+    setFriensData((prev) => [...prev, data]);
+    setAddFriend(false);
+  }
   return (
     <div className="app">
       <div className="sidebar">
-        <FriendsList friends={initialFriends} />
-        <FormAddFriend />
-        <Button>New Friend</Button>
+        <FriendsList friends={friendsData} />
+        {addFriend ? <FormAddFriend passData={newFriendPasser} /> : null}
+        <Button onClick={() => setAddFriend((prev) => !prev)}>{addFriend ? "Close" : "New Friend"}</Button>
       </div>
       <FormSplitBill></FormSplitBill>
     </div>
