@@ -7,8 +7,11 @@ export default function FormSplitBill() {
       <label>💰 Bill Value:</label>
       <input type="text" />
 
-      <label>💰 Your Expence:</label>
+      <label>🧾 Your Expence:</label>
       <input type="text" />
+
+      <label>📜 X's Expense:</label>
+      <input type="text" disabled />
 
       <Button>Split Bill</Button>
     </form>
