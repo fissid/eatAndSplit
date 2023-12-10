@@ -34,7 +34,7 @@ function App() {
     setAddFriend(false);
   }
   function selectionHandler(fr) {
-    setSelectedFriend(fr);
+    setSelectedFriend((prev) => (prev.id === fr.id ? null : fr));
   }
   return (
     <div className="app">

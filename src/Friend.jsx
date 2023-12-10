@@ -1,5 +1,8 @@
 import Button from "./Button";
 export default function Friend({ friend, onselection, selectedFriend }) {
+  //   if (!selectedFriend) return;
+  //   learn about optional chaininhg
+  //   error is here
   const isSelecetd = selectedFriend.id === friend.id;
   return (
     <li className={isSelecetd ? "selected" : ""}>
@@ -20,7 +23,7 @@ export default function Friend({ friend, onselection, selectedFriend }) {
 
       {friend.balance === 0 && <p>You and {friend.name} are even</p>}
 
-      <Button onClick={() => onselection(friend)}>Select</Button>
+      <Button onClick={() => onselection(friend)}>{isSelecetd ? "Close" : "Select"}</Button>
     </li>
   );
 }
