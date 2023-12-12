@@ -17,7 +17,7 @@ export default function Friend({ friend, onselection, selectedFriend }) {
 
       {friend.balance > 0 && (
         <p className="green">
-          {friend.name} owes you {Math.abs(friend.balance)}$
+          {friend.name} owes you {Math.abs(friend.balance)} $
         </p>
       )}
 
