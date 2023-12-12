@@ -37,6 +37,9 @@ function App() {
     setSelectedFriend((prev) => (prev?.id === fr.id ? null : fr));
     setAddFriend(false);
   }
+  function splitBillHandler(val) {
+    console.log(val);
+  }
   return (
     <div className="app">
       <div className="sidebar">
@@ -44,7 +47,7 @@ function App() {
         {addFriend ? <FormAddFriend passData={newFriendPasser} /> : null}
         <Button onClick={() => setAddFriend((prev) => !prev)}>{addFriend ? "Close" : "New Friend"}</Button>
       </div>
-      {selectedFriend && <FormSplitBill selectedFriend={selectedFriend} />}
+      {selectedFriend && <FormSplitBill selectedFriend={selectedFriend} onSplitBill={splitBillHandler} />}
     </div>
   );
 }
