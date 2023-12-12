@@ -2,6 +2,8 @@ import { useState } from "react";
 import Button from "./Button";
 export default function FormSplitBill({ selectedFriend }) {
   const [bill, setBill] = useState("");
+  const [paidByUser, setpaidByUser] = useState("");
+  const [whoIsPaying, setWhoIsPaying] = useState("user");
   return (
     <form className="form-split-bill">
       <h2>split a bill with X</h2>
