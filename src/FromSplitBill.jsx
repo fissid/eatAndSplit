@@ -9,16 +9,16 @@ export default function FormSplitBill({ selectedFriend }) {
       <h2>split a bill with X</h2>
 
       <label>💰 Bill Value:</label>
-      <input type="text" />
+      <input type="text" value={bill} onChange={(e) => setBill(e.target.value)} />
 
       <label>🧾 Your Expence:</label>
-      <input type="text" />
+      <input type="text" value={paidByUser} onChange={(e) => setpaidByUser(e.target.value)} />
 
       <label>📜 {selectedFriend.name}'s Expense:</label>
       <input type="text" disabled />
 
       <label>🤑 Who is paying:</label>
-      <select>
+      <select value={whoIsPaying} onChange={(e) => setWhoIsPaying(e.target.value)}>
         <option value="user">You</option>
         <option value="friend">{selectedFriend.name}</option>
       </select>
