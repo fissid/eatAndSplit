@@ -1,9 +1,8 @@
 import Button from "./Button";
 export default function Friend({ friend, onselection, selectedFriend }) {
   //   if (!selectedFriend) return;
-  //   learn about optional chaininhg
-  //   error is here
-  const isSelecetd = selectedFriend.id === friend.id;
+  const isSelecetd = selectedFriend.id === friend.id ? true : undefined;
+
   return (
     <li className={isSelecetd ? "selected" : ""}>
       <img src={friend.image} alt={friend.name} />
