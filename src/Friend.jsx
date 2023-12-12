@@ -1,7 +1,11 @@
 import Button from "./Button";
 export default function Friend({ friend, onselection, selectedFriend }) {
-  //   if (!selectedFriend) return;
-  const isSelecetd = selectedFriend.id === friend.id ? true : undefined;
+  // let isSelecetd;
+  // if (selectedFriend) {
+  //   isSelecetd = selectedFriend.id === friend.id ? true : null;
+  // }
+
+  const isSelecetd = selectedFriend?.id === friend.id;
 
   return (
     <li className={isSelecetd ? "selected" : ""}>
