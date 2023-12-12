@@ -29,6 +29,7 @@ function App() {
   const [addFriend, setAddFriend] = useState(false);
   const [friendsData, setFriensData] = useState(initialFriends);
   const [selectedFriend, setSelectedFriend] = useState(null);
+
   function newFriendPasser(data) {
     setFriensData((prev) => [...prev, data]);
     setAddFriend(false);
@@ -38,7 +39,8 @@ function App() {
     setAddFriend(false);
   }
   function splitBillHandler(val) {
-    console.log(val);
+    setFriensData((prev) => prev.map((each) => (each.id === selectedFriend.id ? { ...each, balance: each.balance + val } : each)));
+    setSelectedFriend(null);
   }
   return (
     <div className="app">
