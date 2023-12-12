@@ -31,8 +31,8 @@ Please note that the current version of the website is not fully responsive and 
 
 ## How to Contribute:
 
-- 🌟 **Join Me:** Help me redefine travel planning by contributing to FarAway!
-- 🐞 **Report Issues:** Encountered a bug? Let me know by opening an issue.
-- 💡 **Feature Requests:** Share your ideas for making FarAway even better.
+-  **Join Me:** Help me redefine travel planning by contributing to FarAway!
+-  **Report Issues:** Encountered a bug? Let me know by opening an issue.
+-  **Feature Requests:** Share your ideas for making FarAway even better.
 
 ![TravelPal Screenshot](https://github.com/fissid/eatAndSplit/blob/d8c8d9d1f5e887e62d5c38e39da32d8f9d586a68/Capture.PNG)
