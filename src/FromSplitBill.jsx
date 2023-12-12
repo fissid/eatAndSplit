@@ -1,5 +1,7 @@
+import { useState } from "react";
 import Button from "./Button";
 export default function FormSplitBill({ selectedFriend }) {
+  const [bill, setBill] = useState("");
   return (
     <form className="form-split-bill">
       <h2>split a bill with X</h2>
