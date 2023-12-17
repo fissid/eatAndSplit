@@ -49,7 +49,7 @@ function App() {
         {addFriend ? <FormAddFriend passData={newFriendPasser} /> : null}
         <Button onClick={() => setAddFriend((prev) => !prev)}>{addFriend ? "Close" : "New Friend"}</Button>
       </div>
-      {selectedFriend && <FormSplitBill selectedFriend={selectedFriend} onSplitBill={splitBillHandler} />}
+      {selectedFriend && <FormSplitBill selectedFriend={selectedFriend} onSplitBill={splitBillHandler} key={selectedFriend.id} />}
     </div>
   );
 }
